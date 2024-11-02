@@ -1,18 +1,77 @@
 body {
     background-color: #333;
     color: #fff;
-    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-title {
+    color: orange;
+    font-size: 64px;
+}
+
+.recipes-list {
+    list-style: none;
+    display: inline-flex;
+    margin-top: 100px;
+}
+
+li {
+    margin: 0 30px
+}
+
+li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px;
 }
 
 .title {
     font-size: 48px;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
+    padding: 30px;
     color: orange;
+}
+
+.first-section {
+    display: flex;
+    width: 100%;
+}
+
+.second-section {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.image-container {
+    width: 50%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 64px;
+    border-bottom-left-radius: 64px;
+}
+
+.description-container {
+    width: 50%;
+    padding: 40px;
+}
+
+.description-container p, .second-section li {
+    letter-spacing: 2px;
+    line-height: 24px;
+}
+
+h2 {
+    font-size: 36px;
+    color: orange;
+
 }
